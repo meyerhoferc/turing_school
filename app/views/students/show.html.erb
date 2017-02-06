@@ -1,0 +1,16 @@
+<h3>Student: <%= @student.name %></h3>
+
+<h5>Addresses</h5>
+<% @student.addresses.each do |address| %>
+<li>
+  <%= "#{address.address}" %>
+  <%= "#{address.city}" %>
+</li>
+<% end %>
+
+<h5>Courses</h5>
+<% @student.courses.each do |course| %>
+<li>
+  <%= course.title %>
+</li>
+<% end %>
